@@ -28,6 +28,18 @@ header h1 {
   margin-bottom: 10px;
 }
 
+#teacher-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+#logged-in-teacher {
+  font-size: 14px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -186,6 +198,24 @@ button:hover {
   background-color: #d1ecf1;
   color: #0c5460;
   border: 1px solid #bee5eb;
+}
+
+dialog {
+  border: none;
+  border-radius: 5px;
+  padding: 24px;
+  margin: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .hidden {
